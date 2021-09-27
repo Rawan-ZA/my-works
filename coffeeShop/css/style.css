@@ -428,13 +428,7 @@ footer .credit{
      margin: 20px 40px 0 40px;
     border-top: 1px solid #865439;
     font-weight: 400;
-
-
 }
-
-
-
-
 
 /*  start animation  */
 @keyframes float{
@@ -453,9 +447,7 @@ footer .credit{
         50%{
             transform: scale(.8);
             border-radius: var(--border-reduis);
-        }
-        
-    
+        }    
 }
   /* responsiv section  */
 
