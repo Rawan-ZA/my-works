@@ -430,6 +430,7 @@ footer .copyright span{
         width: 250px;
         height: 250px;
       }
+    
       .header .fa-bars{
           display: none;
       }
@@ -600,12 +601,6 @@ footer .copyright span{
     }
     .layout{
         display: none;
-        /* background-color: rgba(0, 0, 0, 0.7);
-        width: 100%;
-        height: 970px;
-        z-index: 1;
-        opacity: 0.3;
-        margin-top: -990px; */
     }
     .about-section .content .images{
       display: flex;
@@ -654,7 +649,6 @@ footer .copyright span{
     }
     .about-section .images  img{
          float: left;
-         /* transform: translateX(50px); */
          width: 19rem;
          height: 19rem;
     }
@@ -669,12 +663,12 @@ footer .copyright span{
         width: 250px;
         height: 250px;
         overflow: hidden;
-            
+        box-shadow: var(--shadow);  
     }
     .facilities-section .box  a img{
            width: 250px;
            height: 250px;
-           /* margin-left: 100px; */
+
     }
     .layout{
       display: none;
@@ -690,28 +684,4 @@ footer .copyright span{
     
 }
    
-    /* .home-section .content {
-        text-align: center;
-        display: flex;
-        align-items: center;
-    }
-    .home-section .content h1{
-      width: 100%;
-    }
-    .home-section .images{
-        width:100%
-    }
-    .home-section .content .read-btn{
-        font-size: 20px;
-          width: 100%;
-     }
-     .facilities-section .col img{
-         width: auto;
-         
-     }
-     .facilities-section .col a{
-         width: auto;
-     }
-     .counter-section .col{
-         width: 50%;
-     } */
+
