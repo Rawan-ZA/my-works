@@ -623,6 +623,10 @@ footer .copyright span{
 }
 }
 @media(max-width:450px){
+        .header .nav{
+        margin-right: 10px;
+     
+    }
     .home-section .images img{
         width: 200px;
        
