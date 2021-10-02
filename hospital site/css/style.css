@@ -741,5 +741,14 @@ footer .copyright span{
     }
     
 }
-   
+   /* start animation  */
+@keyframes pageLoader{
+    0%,100%{
+        transform: translateX(-50%);
+    }
+    50%{
+        transform: translateX(50%);
+
+    }
+}
 
