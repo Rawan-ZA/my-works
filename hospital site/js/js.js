@@ -45,3 +45,7 @@ $(document).ready(function(){
           menu.classList.toggle('fa-times');
           nav.classList.toggle('nav-toggle');
     });
+window.addEventListener('scroll',()=>{
+        menu.classList.remove('fa-times');
+        nav.classList.remove('nav-toggle');
+    });
