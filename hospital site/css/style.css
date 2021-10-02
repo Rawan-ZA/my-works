@@ -197,12 +197,12 @@ button{
   
 }
 .layout{
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
-    height: 430px;
+    height: 460px;
     z-index: 1;
     opacity: 0.3;
-    margin-top: -450px;
+    margin-top: -480px;
 }
  .review-section .row .heading{
     z-index: 2;
