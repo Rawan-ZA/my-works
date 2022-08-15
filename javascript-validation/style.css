@@ -1,0 +1,98 @@
+/* global links  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+/* global setting  */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #8cccff;
+}
+
+.box {
+  position: relative;
+  width: 300px;
+}
+.box .input-box {
+  width: 100%;
+  position: relative;
+  background: #fff;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.box .input-box input {
+  position: relative;
+  width: 100%;
+  padding: 10px 5px;
+  outline: none;
+  border: none;
+}
+.box .input-box input:focus::placeholder {
+  transition: 0.3s;
+  opacity: 0;
+}
+.box .input-box #toggleBtn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+}
+.box .input-box #toggleBtn::before {
+  content: "\f06e";
+  font-family: fontAwesome;
+}
+.box .input-box #toggleBtn.hide::before {
+  content: "\f070";
+  font-family: fontAwesome;
+}
+/* start validation section  */
+.validation {
+  background: #376499;
+  padding: 10px;
+  margin-top: 30px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+.validation ul {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 10px;
+}
+.validation ul li {
+  color: #fff;
+  position: relative;
+  list-style: none;
+  transition: 0.5s;
+  font-size: 0.85em;
+}
+.validation ul li.valid {
+  color: rgba(255, 255, 255, 0.5);
+}
+.validation ul li::before {
+  content: "\f192";
+  font-family: fontAwesome;
+  width: 20px;
+  height: 10px;
+  display: inline-flex;
+}
+.validation ul li.valid::before {
+  content: "\f00c";
+  font-family: fontAwesome;
+  color: #0f0;
+}
