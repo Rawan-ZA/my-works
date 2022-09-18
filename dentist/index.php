@@ -1,23 +1,3 @@
-<?php
-
-$con = mysqli_connect('localhost', 'root', '', 'dentist_db') or die('connection failed');
-if (isset($_POST['submit'])) {
-  $name    = mysqli_real_escape_string($con, $_POST['name']);
-  $email   = mysqli_real_escape_string($con, $_POST['email']);
-  $number  = $_POST['number'];
-  $date    = $_POST['date'];
-  $insert  = mysqli_query($con, "INSERT INTO`contact_form`(name, email, number, data)
-                                 VALUES('$name','$email','$number','$date')") or die('Connection Failed');
-
-  if ($insert) {
-    $message[] = 'Appointment Made Successfully';
-  } else {
-    $message[] = 'Appointment Failed';
-  }
-}
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
